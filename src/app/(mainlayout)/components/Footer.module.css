@@ -1,0 +1,58 @@
+/* components/Footer.module.css */
+.footer {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+  text-align: center;
+  justify-content: space-between;
+  width: 1200px;
+}
+
+.linksSection {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.linksSection div {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.linksSection h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.linksSection ul {
+  list-style: none;
+  padding: 0;
+}
+
+.linksSection li {
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerBottom .logo {
+  text-align: left;
+}
+
+.footerBottom .logo img {
+  width: 50px;
+}
+
+.footerBottom .logo p {
+  font-size: 12px;
+  color: #666;
+}
+
+.footerBottom .socialMedia a {
+  margin: 0 10px;
+}

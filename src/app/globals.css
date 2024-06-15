@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -84,15 +87,13 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
 }
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  /* Remember to use the other versions for IE 10 and older browsers! */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  font-family: "lato", sans-serif;
 }
 
 a {
@@ -104,4 +105,22 @@ a {
   html {
     color-scheme: dark;
   }
+}
+input {
+  border: 0;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  padding-bottom: 50px;
 }
